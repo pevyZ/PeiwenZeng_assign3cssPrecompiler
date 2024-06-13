@@ -1,13 +1,13 @@
 /* Error: Missing argument $font-weight.
  *     ,
- * 6   | @mixin anything($font-weight) {
+ * 9   | @mixin anything($font-weight) {
  *     |        ====================== declaration
  * ... |
- * 74  |     @include anything;
+ * 77  |     @include anything;
  *     |     ^^^^^^^^^^^^^^^^^ invocation
  *     '
- *   src/scss/stylesheet.scss 74:5  anything()
- *   src/scss/stylesheet.scss 74:5  root stylesheet */
+ *   src/scss/stylesheet.scss 77:5  anything()
+ *   src/scss/stylesheet.scss 77:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -17,5 +17,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Missing argument $font-weight.\a     \2577 \a 6   \2502  @mixin anything($font-weight) {\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 74  \2502      @include anything;\a     \2502      ^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   src/scss/stylesheet.scss 74:5  anything()\a   src/scss/stylesheet.scss 74:5  root stylesheet";
+  content: "Error: Missing argument $font-weight.\a     \2577 \a 9   \2502  @mixin anything($font-weight) {\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 77  \2502      @include anything;\a     \2502      ^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   src/scss/stylesheet.scss 77:5  anything()\a   src/scss/stylesheet.scss 77:5  root stylesheet";
 }

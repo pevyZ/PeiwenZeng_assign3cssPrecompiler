@@ -1,6 +1,9 @@
 /* This is scss variables . */
 $text-colour: #111111;
-
+$hover-color: #999999;
+$footer-color:#989898;
+$header-color:#324360;
+$nav-hover:#35c4ce;
 
 
 @mixin anything($font-weight) {
@@ -28,7 +31,7 @@ a {
     transition: .20s;
 }
 a:hover {
-    color: #999999;
+    color: $hover-color;
 }
 h1,
 h2,
@@ -98,7 +101,7 @@ article {
     margin-top: 0;
 }
 .post-title a {
-    color: #324360;
+    color: $header-color;
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 900;
@@ -108,7 +111,7 @@ article {
     transition: all .3s ease;
 }
 .post-title a:hover {
-    color: #35c4ce;
+    color: $nav-hover;
 }
 
 
@@ -118,10 +121,10 @@ footer {
     padding: 30px 0;
     text-align: center;
     background: #eaf2ff;
-    color: #989898;
+    color: $footer-color;
 }
 #footer a {
-    color: #989898;
+    color: $footer-color;
 }
 #footer a:hover {
     color: $text-colour;
@@ -148,7 +151,7 @@ footer {
 #footer-copyright {
     padding: 20px 0;
     font-size: 12px;
-    color: #989898;
+    color: $footer-color;
 }
 
 
@@ -175,24 +178,24 @@ footer {
     }
     header nav a {
         @include anything(400);
-        color: #324360;
+        color: $header-color;
         letter-spacing: 1px;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 900;
     }
     header nav a:hover {
-        color: #35c4ce;
+        color: $nav-hover;
     }
     header nav li.menu-item-has-children > a::after {
         margin-left: 7px;
         font-family: 'FontAwesome';
         font-size: 13px;
-        color: #324360;
+        color: $header-color;
         content: '\f078';
     }
     .current-menu-item a {
-        border-bottom: 2px solid #324360;
+        border-bottom: 2px solid $header-color;
     }
     /* sub nav */
     header nav ul ul {
