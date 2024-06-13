@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.5"
   }
 }
