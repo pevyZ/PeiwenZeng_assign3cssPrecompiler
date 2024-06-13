@@ -1,4 +1,7 @@
-/* This is the original example. You can take all css styles from here. */
+/* This is scss variables . */
+$text-colour: #111111;
+
+
 
 @mixin anything($font-weight) {
     font-family: 'Josefin Sans', sans-serif;
@@ -21,7 +24,7 @@ p {
 a {
     font-weight: 400;
     text-decoration: none;
-    color: #111111;
+    color: $text-colour;
     transition: .20s;
 }
 a:hover {
@@ -38,7 +41,7 @@ h6 {
     margin-bottom: 20px;
     line-height: 1.3em;
     word-wrap: break-word;
-    color: #111111;
+    color: $text-colour
 }
 h1 {
     font-size: 37px;
@@ -68,7 +71,7 @@ h6 {
 
 /* header and main nav */
 header {
-    font-family: 'Josefin Sans', sans-serif;
+    @include anything;
 }
 header nav ul {
     display: none;
@@ -121,7 +124,7 @@ footer {
     color: #989898;
 }
 #footer a:hover {
-    color: #111111;
+    color: $text-colour;
 }
 .footer-logo {
     width: 200px;
@@ -171,7 +174,7 @@ footer {
         line-height: 24px;
     }
     header nav a {
-        font-family: 'Josefin Sans', sans-serif;
+        @include anything(400);
         color: #324360;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -212,7 +215,7 @@ footer {
     }
     header nav ul ul a {
         display: block;
-        color: #111111;
+        color: $text-colour;
         min-width: 175px;
         margin: 0;
         padding: 20px 10px;
