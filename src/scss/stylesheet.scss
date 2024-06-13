@@ -6,7 +6,7 @@ $header-color:#324360;
 $nav-hover:#35c4ce;
 
 
-@mixin anything($font-weight) {
+@mixin anything($font-weight: 400) {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: $font-weight;
 }
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    @include anything(400);
+    @include anything;
     margin-top: 25px;
     margin-bottom: 20px;
     line-height: 1.3em;
